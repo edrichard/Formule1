@@ -22,6 +22,7 @@
 		65EE957118886B2100FE946D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EE955018886B2100FE946D /* UIKit.framework */; };
 		65EE957918886B2100FE946D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65EE957718886B2100FE946D /* InfoPlist.strings */; };
 		65EE957B18886B2100FE946D /* Formule1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE957A18886B2100FE946D /* Formule1Tests.m */; };
+		65EE958718886C7F00FE946D /* F1SplacheScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE958618886C7F00FE946D /* F1SplacheScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		65EE957618886B2100FE946D /* Formule1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Formule1Tests-Info.plist"; sourceTree = "<group>"; };
 		65EE957818886B2100FE946D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65EE957A18886B2100FE946D /* Formule1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Formule1Tests.m; sourceTree = "<group>"; };
+		65EE958518886C7F00FE946D /* F1SplacheScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F1SplacheScreen.h; sourceTree = "<group>"; };
+		65EE958618886C7F00FE946D /* F1SplacheScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F1SplacheScreen.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,7 @@
 		65EE955218886B2100FE946D /* Formule1 */ = {
 			isa = PBXGroup;
 			children = (
+				65EE958418886C5400FE946D /* Custom */,
 				65EE955B18886B2100FE946D /* F1AppDelegate.h */,
 				65EE955C18886B2100FE946D /* F1AppDelegate.m */,
 				65EE955E18886B2100FE946D /* Main_iPhone.storyboard */,
@@ -153,6 +157,15 @@
 				65EE957718886B2100FE946D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65EE958418886C5400FE946D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				65EE958518886C7F00FE946D /* F1SplacheScreen.h */,
+				65EE958618886C7F00FE946D /* F1SplacheScreen.m */,
+			);
+			name = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +270,7 @@
 				65EE956618886B2100FE946D /* F1ViewController.m in Sources */,
 				65EE955918886B2100FE946D /* main.m in Sources */,
 				65EE955D18886B2100FE946D /* F1AppDelegate.m in Sources */,
+				65EE958718886C7F00FE946D /* F1SplacheScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
