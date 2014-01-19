@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		653EC2D7188C25EE00634B44 /* F1NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653EC2D6188C25EE00634B44 /* F1NavigationController.m */; };
+		653EC2DC188C371400634B44 /* F1Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 653EC2DB188C371400634B44 /* F1Button.m */; };
+		653EC2DE188C493100634B44 /* circuit.png in Resources */ = {isa = PBXBuildFile; fileRef = 653EC2DD188C493100634B44 /* circuit.png */; };
 		65EE954D18886B2100FE946D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EE954C18886B2100FE946D /* Foundation.framework */; };
 		65EE954F18886B2100FE946D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EE954E18886B2100FE946D /* CoreGraphics.framework */; };
 		65EE955118886B2100FE946D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EE955018886B2100FE946D /* UIKit.framework */; };
@@ -42,6 +44,9 @@
 		653EC2D5188C25EE00634B44 /* F1NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F1NavigationController.h; sourceTree = "<group>"; };
 		653EC2D6188C25EE00634B44 /* F1NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F1NavigationController.m; sourceTree = "<group>"; };
 		653EC2D9188C285200634B44 /* F1Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = F1Constant.h; sourceTree = "<group>"; };
+		653EC2DA188C371400634B44 /* F1Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F1Button.h; sourceTree = "<group>"; };
+		653EC2DB188C371400634B44 /* F1Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F1Button.m; sourceTree = "<group>"; };
+		653EC2DD188C493100634B44 /* circuit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circuit.png; sourceTree = "<group>"; };
 		65EE954918886B2100FE946D /* Formule1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Formule1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EE954C18886B2100FE946D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65EE954E18886B2100FE946D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -187,6 +192,8 @@
 				65EE958618886C7F00FE946D /* F1SplacheScreen.m */,
 				653EC2D5188C25EE00634B44 /* F1NavigationController.h */,
 				653EC2D6188C25EE00634B44 /* F1NavigationController.m */,
+				653EC2DA188C371400634B44 /* F1Button.h */,
+				653EC2DB188C371400634B44 /* F1Button.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -202,6 +209,7 @@
 		65EE95891888755100FE946D /* img */ = {
 			isa = PBXGroup;
 			children = (
+				653EC2DD188C493100634B44 /* circuit.png */,
 				65EE958A1888756600FE946D /* logoF1.jpg */,
 			);
 			name = img;
@@ -287,6 +295,7 @@
 				65EE956318886B2100FE946D /* Main_iPad.storyboard in Resources */,
 				65EE956818886B2100FE946D /* Images.xcassets in Resources */,
 				65EE958B1888756600FE946D /* logoF1.jpg in Resources */,
+				653EC2DE188C493100634B44 /* circuit.png in Resources */,
 				65EE956018886B2100FE946D /* Main_iPhone.storyboard in Resources */,
 				65EE955718886B2100FE946D /* InfoPlist.strings in Resources */,
 			);
@@ -313,6 +322,7 @@
 				65EE955D18886B2100FE946D /* F1AppDelegate.m in Sources */,
 				653EC2D7188C25EE00634B44 /* F1NavigationController.m in Sources */,
 				65EE958718886C7F00FE946D /* F1SplacheScreen.m in Sources */,
+				653EC2DC188C371400634B44 /* F1Button.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
