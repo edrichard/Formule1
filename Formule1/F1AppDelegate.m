@@ -8,6 +8,7 @@
 
 #import "F1AppDelegate.h"
 #import "F1ViewController.h"
+#import "F1NavigationController.h"
 
 @implementation F1AppDelegate
 
@@ -18,7 +19,7 @@
     self.window.rootViewController = self.viewContoller;
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.viewContoller];
-    [self.window addSubview:[self.navigationController view]];
+    [self.window setRootViewController:self.navigationController];
     [self.window makeKeyAndVisible];
     
     return YES;
@@ -49,6 +50,35 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    return UIInterfaceOrientationMaskAll;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
+}
+
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        return UIInterfaceOrientationMaskLandscape;
+    } else {
+        return UIInterfaceOrientationMaskAll;
+    }
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationLandscapeLeft;
 }
 
 @end
