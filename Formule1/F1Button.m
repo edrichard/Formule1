@@ -36,6 +36,11 @@
     [self addGestureRecognizer:tapGesture];
 }
 
+- (void) setupClose
+{
+    
+}
+
 - (void) didTaped:(UITapGestureRecognizer *)sender
 {
     if ([[self delegate] respondsToSelector:@selector(didTapEquipeButton:)] && [self.nomBoutton isEqualToString: F1_BOUTTON_EQUIPE]) {
