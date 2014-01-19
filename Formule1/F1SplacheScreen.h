@@ -10,4 +10,9 @@
 
 @interface F1SplacheScreen : UIView
 
+@property (nonatomic, strong) NSString *logoImgName;
+@property (nonatomic, strong) NSString *accroche;
+
+- (void) setup;
+
 @end

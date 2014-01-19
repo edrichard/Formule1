@@ -8,24 +8,26 @@
 
 #import "F1SplacheScreen.h"
 
+@interface F1SplacheScreen ()
+
+@end
+
 @implementation F1SplacheScreen
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
+@synthesize logoImgName = _logoImgName;
+@synthesize accroche = _accroche;
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (void) setup
 {
-    // Drawing code
+    UIImageView *logoView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 315, 171)];
+    UIImage *logoImg = [UIImage imageNamed:_logoImgName];
+    logoView.image = logoImg;
+    [self addSubview:logoView];
+    
+    UILabel *labelAccroche = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 315, 171)];
+    labelAccroche.textColor = [UIColor whiteColor];
+    labelAccroche.text = _accroche;
+    [self addSubview:labelAccroche];
 }
-*/
 
 @end
