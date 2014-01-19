@@ -14,3 +14,5 @@
 #define F1_BOUTTON_ACTU         @"f1BouttonActu"
 
 #define F1_BOUTTON_INFO         @"f1BouttonInfo"
+
+#define F1_BOUTON_FERMER_IMG    @"close.png"
