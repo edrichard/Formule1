@@ -20,7 +20,7 @@
 @synthesize icoName = _icoName;
 @synthesize nomBoutton = _nomBoutton;
 
-- (void) setup
+- (void) setupShow
 {
     UIImageView *icoView = [[UIImageView alloc] initWithFrame:CGRectMake(15, 35, 128, 128)];
     UIImage *icoImg = [UIImage imageNamed:_icoName];

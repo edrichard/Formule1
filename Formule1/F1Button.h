@@ -17,7 +17,7 @@
 @property (nonatomic, strong) NSString *nomBoutton;
 @property(nonatomic, weak) id<F1ButtonDelegate> delegate;
 
-- (void) setup;
+- (void) setupShow;
 
 @end
 
