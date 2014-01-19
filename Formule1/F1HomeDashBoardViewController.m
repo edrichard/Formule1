@@ -54,7 +54,7 @@
     self.btnEquipe.icoName = @"circuit.png";
     self.btnEquipe.delegate = self;
     self.btnEquipe.nomBoutton = F1_BOUTTON_EQUIPE;
-    [self.btnEquipe setup];
+    [self.btnEquipe setupShow];
     [self.view addSubview:self.btnEquipe];
 }
 
@@ -66,7 +66,7 @@
     self.btnCircuit.icoName = @"circuit.png";
     self.btnCircuit.delegate = self;
     self.btnCircuit.nomBoutton = F1_BOUTTON_CIRCUIT;
-    [self.btnCircuit setup];
+    [self.btnCircuit setupShow];
     [self.view addSubview:self.btnCircuit];
 }
 
@@ -78,7 +78,7 @@
     self.btnActu.icoName = @"circuit.png";
     self.btnActu.delegate = self;
     self.btnActu.nomBoutton = F1_BOUTTON_ACTU;
-    [self.btnActu setup];
+    [self.btnActu setupShow];
     [self.view addSubview:self.btnActu];
 }
 
@@ -90,7 +90,7 @@
     self.btnInfo.icoName = @"circuit.png";
     self.btnInfo.delegate = self;
     self.btnInfo.nomBoutton = F1_BOUTTON_INFO;
-    [self.btnInfo setup];
+    [self.btnInfo setupShow];
     [self.view addSubview:self.btnInfo];
 }
 
