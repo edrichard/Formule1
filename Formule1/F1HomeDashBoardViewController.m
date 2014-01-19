@@ -9,7 +9,7 @@
 #import "F1HomeDashBoardViewController.h"
 #include "F1Button.h"
 
-@interface F1HomeDashBoardViewController () <F1ButtonDelegate>
+@interface F1HomeDashBoardViewController () <F1ButtonShowDelegate>
 
 @property (nonatomic, strong) F1Button *btnEquipe;
 @property (nonatomic, strong) F1Button *btnCircuit;
