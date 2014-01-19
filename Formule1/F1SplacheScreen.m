@@ -19,13 +19,14 @@
 
 - (void) setup
 {
-    UIImageView *logoView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 315, 171)];
+    UIImageView *logoView = [[UIImageView alloc] initWithFrame:CGRectMake(F1_SCREEN_HEIGHT/3, F1_SCREEN_WIDTH/3, 315, 171)];
     UIImage *logoImg = [UIImage imageNamed:_logoImgName];
     logoView.image = logoImg;
     [self addSubview:logoView];
     
-    UILabel *labelAccroche = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 315, 171)];
+    UILabel *labelAccroche = [[UILabel alloc] initWithFrame:CGRectMake(F1_SCREEN_HEIGHT/3, (F1_SCREEN_WIDTH/3)+171, 315, 50)];
     labelAccroche.textColor = [UIColor whiteColor];
+    labelAccroche.textAlignment = NSTextAlignmentCenter;
     labelAccroche.text = _accroche;
     [self addSubview:labelAccroche];
 }
