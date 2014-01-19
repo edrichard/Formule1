@@ -7,12 +7,20 @@
 //
 
 #import "F1AppDelegate.h"
+#import "F1ViewController.h"
 
 @implementation F1AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.viewContoller = [[F1ViewController alloc] init];
+    self.window.rootViewController = self.viewContoller;
+    
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.viewContoller];
+    [self.window addSubview:[self.navigationController view]];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							

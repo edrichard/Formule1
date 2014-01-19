@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "F1ViewController.h"
 
 @interface F1AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) F1ViewController *viewContoller;
+@property (nonatomic, strong) UINavigationController *navigationController;
 
 @end
