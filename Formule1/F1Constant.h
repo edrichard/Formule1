@@ -8,3 +8,9 @@
 
 #define F1_SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 #define F1_SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#define F1_BOUTTON_EQUIPE       @"f1BouttonEquipe"
+#define F1_BOUTTON_CIRCUIT      @"f1BouttonCircuit"
+#define F1_BOUTTON_ACTU         @"f1BouttonActu"
+
+#define F1_BOUTTON_INFO         @"f1BouttonInfo"
